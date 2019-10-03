@@ -1,0 +1,7 @@
+group: 
+  name: pkg-ext
+  after: hippo-cms
+project: pkg-ext
+module: 
+  name: pkg-ext-repository-data-development
+  after: pkg-ext-repository-data-application

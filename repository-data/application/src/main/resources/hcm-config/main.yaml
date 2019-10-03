@@ -1,0 +1,5 @@
+definitions:
+  namespace:
+    pkgext:
+      uri: http://www.pkgext.com/pkgext/nt/1.0
+      cnd: namespaces/pkg-ext.cnd

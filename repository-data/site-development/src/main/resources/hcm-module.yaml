@@ -1,0 +1,6 @@
+site: pkg-ext
+group: pkg-ext
+project: pkg-ext
+module:
+  name: pkg-ext-repository-data-site-development
+  after: pkg-ext-repository-data-site
