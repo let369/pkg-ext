@@ -59,7 +59,7 @@
   <!-- End of emptied/overridden metadata from parent hippo-cms7-release pom. -->
 
   <properties>
-
+    <edp.version>0.3.1</edp.version>
     <!--***START temporary override of versions*** -->
     <!-- ***END temporary override of versions*** -->
 
@@ -78,6 +78,11 @@
       <id>hippo</id>
       <name>Hippo maven 2 repository.</name>
       <url>https://maven.onehippo.com/maven2/</url>
+    </repository>
+    <repository>
+      <id>hippo-maven2-forge</id>
+      <name>Hippo Maven 2 Repository</name>
+      <url>https://maven.onehippo.com/maven2-forge/</url>
     </repository>
   </repositories>
 

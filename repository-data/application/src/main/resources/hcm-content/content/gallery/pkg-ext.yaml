@@ -1,7 +1,7 @@
 /content/gallery/pkgext:
   jcr:primaryType: hippogallery:stdImageGallery
   jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+  jcr:uuid: 9e8d0418-782a-4f68-948e-78dc7d6ac7de
   hippo:name: pkg-ext
   hippostd:foldertype: [new-image-folder]
   hippostd:gallerytype: ['hippogallery:imageset']
-

@@ -1,0 +1,32 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:translations/hippo:types/pkgext:bannerdocument:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Banner
+        pkgext:content: Content
+        pkgext:image: Image
+        pkgext:link: Link
+        pkgext:title: Title
+      /nl:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Banner
+        pkgext:content: Inhoud
+        pkgext:image: Afbeelding
+        pkgext:link: Link
+        pkgext:title: Titel
+      /fr:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Bannière
+        pkgext:content: Contenu
+        pkgext:image: Image
+        pkgext:link: Lien
+        pkgext:title: Titre
+      /de:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Banner
+        pkgext:content: Inhalt
+        pkgext:image: Abbildung
+        pkgext:link: Link
+        pkgext:title: Titel

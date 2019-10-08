@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.example</groupId>
@@ -12,7 +11,18 @@
   <name>pkg-ext CMS Dependencies</name>
   <description>pkg-ext CMS Dependencies</description>
   <dependencies>
-
+    <!--OpenUI extensions-->
+      <!--<dependency>-->
+        <!--<groupId>com.bloomreach.openui</groupId>-->
+        <!--<artifactId>openui-external-document-picker-api</artifactId>-->
+        <!--<version>${edp.version}</version>-->
+      <!--</dependency>-->
+      <!--<dependency>-->
+        <!--<groupId>com.bloomreach.openui</groupId>-->
+        <!--<artifactId>openui-external-document-picker-giphy-cms</artifactId>-->
+        <!--<version>${edp.version}</version>-->
+      <!--</dependency>-->
+    <!--OpenUI extensions-->
     <dependency>
       <groupId>org.example</groupId>
       <artifactId>pkg-ext-repository-data-application</artifactId>
@@ -40,6 +50,22 @@
     <dependency>
       <groupId>org.onehippo.cms7</groupId>
       <artifactId>hippo-plugin-selections-addon-repository</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.onehippo.cms7</groupId>
+      <artifactId>hippo-addon-crisp-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.onehippo.cms7</groupId>
+      <artifactId>hippo-addon-crisp-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.onehippo.cms7</groupId>
+      <artifactId>hippo-addon-crisp-hst</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.onehippo.cms7</groupId>
+      <artifactId>hippo-addon-crisp-repository</artifactId>
     </dependency>
   </dependencies>
 </project>

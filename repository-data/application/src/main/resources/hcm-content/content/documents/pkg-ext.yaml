@@ -1,6 +1,8 @@
 /content/documents/pkgext:
+  .meta:order-before: administration
   jcr:primaryType: hippostd:folder
   jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:referenceable']
+  jcr:uuid: 549ac145-13e5-4258-8abd-07b3e4644f1e
   hippo:name: pkg-ext
   hippostd:foldertype: [new-translated-folder, new-document]
   hippotranslation:id: 996bcac5-86cf-49b5-a7a3-16a74863e814
