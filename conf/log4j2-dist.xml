@@ -25,6 +25,17 @@
       <DefaultRolloverStrategy max="4" fileIndex="min"/>
     </RollingFile>
 
+    <!-- openui.log -->
+    <RollingFile name="openui" fileName="${sys:catalina.base}/logs/openui.log"
+                 filePattern="${sys:catalina.base}/logs/openui.log.%d{yyyy-MM-dd}">
+      <LookupFilter key="jndi:logging/contextName" value="openui" onMatch="ACCEPT"/>
+      <PatternLayout pattern="%d{dd.MM.yyyy HH:mm:ss} [%t] %-5p [%C.%M():%L] %m%n"/>
+      <Policies>
+        <SizeBasedTriggeringPolicy size="10MB"/>
+      </Policies>
+      <DefaultRolloverStrategy max="4" fileIndex="min"/>
+    </RollingFile>
+
     <!-- audit.log -->
     <RollingFile name="audit" fileName="${sys:catalina.base}/logs/audit.log"
                  filePattern="${sys:catalina.base}/logs/audit.log.%d{yyyy-MM-dd}">
@@ -86,6 +97,7 @@
     <Root level="warn">
       <AppenderRef ref="site"/>
       <AppenderRef ref="cms"/>
+      <AppenderRef ref="openui"/>
     </Root>
 
   </Loggers>

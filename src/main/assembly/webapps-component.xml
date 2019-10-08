@@ -11,5 +11,10 @@
       <outputDirectory>webapps</outputDirectory>
       <destName>site.war</destName>
     </file>
+    <file>
+      <source>openui-extensions/target/openui.war</source>
+      <outputDirectory>webapps</outputDirectory>
+      <destName>openui.war</destName>
+    </file>
   </files>
 </component>

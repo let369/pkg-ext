@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.example</groupId>
+    <artifactId>pkg-ext</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>pkg-ext-openui</artifactId>
+  <packaging>war</packaging>
+  <name>pkg-ext OpenUI</name>
+  <description>pkg-ext OpenUI</description>
+  <dependencies>
+  </dependencies>
+  <build>
+    <finalName>openui</finalName>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <excludes>
+          <exclude>/**</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    <plugins>
+      <!--<plugin>-->
+        <!--<groupId>com.github.eirslett</groupId>-->
+        <!--<artifactId>frontend-maven-plugin</artifactId>-->
+        <!--<version>1.6</version>-->
+        <!--<configuration>-->
+          <!--<installDirectory>target</installDirectory>-->
+        <!--</configuration>-->
+        <!--<executions>-->
+          <!--<execution>-->
+            <!--<id>install node and npm</id>-->
+            <!--<goals>-->
+              <!--<goal>install-node-and-npm</goal>-->
+            <!--</goals>-->
+            <!--<configuration>-->
+              <!--<workingDirectory>src/main/resources</workingDirectory>-->
+              <!--<nodeVersion>v8.9.4</nodeVersion>-->
+              <!--<npmVersion>5.6.0</npmVersion>-->
+            <!--</configuration>-->
+          <!--</execution>-->
+          <!--&lt;!&ndash;External product picker extension installation & build&ndash;&gt;-->
+          <!--<execution>-->
+            <!--<id>npm install ga</id>-->
+            <!--<goals>-->
+              <!--<goal>npm</goal>-->
+            <!--</goals>-->
+            <!--<configuration>-->
+              <!--<workingDirectory>src/main/resources/productPicker</workingDirectory>-->
+              <!--<arguments>install</arguments>-->
+            <!--</configuration>-->
+          <!--</execution>-->
+          <!--<execution>-->
+            <!--<id>npm run build productPicker</id>-->
+            <!--<goals>-->
+              <!--<goal>npm</goal>-->
+            <!--</goals>-->
+            <!--<configuration>-->
+              <!--<workingDirectory>src/main/resources/productPicker</workingDirectory>-->
+              <!--<arguments>run build</arguments>-->
+            <!--</configuration>-->
+          <!--</execution>-->
+          <!--&lt;!&ndash;External product picker extension installation & build&ndash;&gt;-->
+          <!--&lt;!&ndash;Append below required executions for additional extensions&ndash;&gt;-->
+        <!--</executions>-->
+      <!--</plugin>-->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <executions>
+          <!--GA extension copy build resources-->
+          <execution>
+            <id>create-optimized-resources-ga</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/openui/ga</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>${basedir}/src/main/resources/ga</directory>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+          <!--External product picker extension copy build resources-->
+          <!--Append below required copy executions for additional extensions-->
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.cargo</groupId>
+        <artifactId>cargo-maven2-plugin</artifactId>
+        <configuration>
+          <configuration>
+            <type>runtime</type>
+          </configuration>
+          <container>
+            <type>remote</type>
+          </container>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

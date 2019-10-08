@@ -23,6 +23,16 @@
       </Policies>
     </RollingFile>
 
+    <!-- openui.log -->
+    <RollingFile name="openui" fileName="${sys:catalina.base}/logs/openui.log"
+                 filePattern="${sys:catalina.base}/logs/openui.log.%d{yyyy-MM-dd}">
+      <LookupFilter key="jndi:logging/contextName" value="openui" onMatch="ACCEPT"/>
+      <PatternLayout pattern="%d{dd.MM.yyyy HH:mm:ss} %-5p %t [%C{1}.%M:%L] %m%n"/>
+      <Policies>
+        <TimeBasedTriggeringPolicy/>
+      </Policies>
+    </RollingFile>
+
     <!-- audit.log -->
     <RollingFile name="audit" fileName="${sys:catalina.base}/logs/audit.log"
                  filePattern="${sys:catalina.base}/logs/audit.log.%d{yyyy-MM-dd}">
@@ -129,6 +139,7 @@
       <AppenderRef ref="site"/>
       <AppenderRef ref="cms"/>
       <AppenderRef ref="console"/>
+      <AppenderRef ref="openui"/>
     </Root>
 
   </Loggers>
