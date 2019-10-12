@@ -15,11 +15,11 @@ package org.example.beans;
  * limitations under the License.
  */
 
-import org.onehippo.cms7.essentials.dashboard.annotations.HippoEssentialsGenerated;
 import org.hippoecm.hst.content.beans.Node;
-import org.hippoecm.hst.content.beans.standard.HippoHtml;
-import org.hippoecm.hst.content.beans.standard.HippoGalleryImageSet;
 import org.hippoecm.hst.content.beans.standard.HippoBean;
+import org.hippoecm.hst.content.beans.standard.HippoGalleryImageSet;
+import org.hippoecm.hst.content.beans.standard.HippoHtml;
+import org.onehippo.cms7.essentials.dashboard.annotations.HippoEssentialsGenerated;
 
 @HippoEssentialsGenerated(internalName = "pkgext:bannerdocument")
 @Node(jcrType = "pkgext:bannerdocument")
@@ -43,4 +43,9 @@ public class Banner extends BaseDocument {
 	public HippoBean getLink() {
 		return getLinkedBean("pkgext:link", HippoBean.class);
 	}
+
+    @HippoEssentialsGenerated(internalName = "pkgext:giphyimagepicker")
+    public String[] getGiphyImages() {
+	    return getBean("pkgext:giphyimagepicker", Giphy.class).getImages();
+    }
 }

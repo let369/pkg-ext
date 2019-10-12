@@ -16,6 +16,9 @@
       </figcaption>
     </figure>
   </a>
+      <#list document.giphyImages as image>
+          <img src="${image}"/>
+      </#list>
   <#elseif editMode>
     <figure style="position: relative">
       <@hst.manageContent documentTemplateQuery="new-banner-document" parameterName="document" rootPath="banners"/>

@@ -11,7 +11,7 @@ definitions:
         /hipposysedit:nodetype:
           jcr:primaryType: hipposysedit:nodetype
           jcr:mixinTypes: ['hipposysedit:remodel', 'mix:referenceable']
-          jcr:uuid: 987952e8-9e00-4d88-9b23-05c138698803
+          jcr:uuid: 92e60271-bb33-4014-93b3-be8965d36ced
           hipposysedit:node: true
           hipposysedit:supertype: ['pkgext:basedocument', 'hippostd:relaxed', 'hippotranslation:translated']
           hipposysedit:uri: http://www.pkgext.com/pkgext/nt/1.0
@@ -47,12 +47,20 @@ definitions:
             hipposysedit:path: pkgext:link
             hipposysedit:primary: false
             hipposysedit:type: hippo:mirror
+          /giphyimagepicker:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: pkgext:giphyimagepicker
+            hipposysedit:primary: false
+            hipposysedit:type: giphy:giphyimagepicker
       /hipposysedit:prototypes:
         jcr:primaryType: hipposysedit:prototypeset
         /hipposysedit:prototype:
           jcr:primaryType: pkgext:bannerdocument
           jcr:mixinTypes: ['mix:referenceable']
-          jcr:uuid: f53c14d4-0ebd-40c5-8bab-6abaeef487b2
+          jcr:uuid: 34b5c3e7-094e-4c29-a686-ca730005d3ff
           hippo:related___pathreference: []
           hippostd:holder: holder
           hippostd:state: draft
@@ -65,7 +73,7 @@ definitions:
           pkgext:title: ''
           /pkgext:content:
             jcr:primaryType: hippostd:html
-            hippostd:content: <html><body></body></html>
+            hippostd:content: ''
           /pkgext:image:
             jcr:primaryType: hippogallerypicker:imagelink
             hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
@@ -75,6 +83,10 @@ definitions:
           /pkgext:link:
             jcr:primaryType: hippo:mirror
             hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          /pkgext:giphyimagepicker:
+            jcr:primaryType: giphy:giphyimagepicker
+            giphy:gifs: ''
+            giphy:images: []
       /editor:templates:
         jcr:primaryType: editor:templateset
         /_default_:
@@ -125,5 +137,14 @@ definitions:
             field: link
             plugin.class: org.hippoecm.frontend.editor.plugins.field.NodeFieldPlugin
             wicket.id: ${cluster.id}.right.item
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /giphyimagepicker:
+            jcr:primaryType: frontend:plugin
+            caption: GIPHY Image Picker
+            field: giphyimagepicker
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.NodeFieldPlugin
+            wicket.id: ${cluster.id}.right.item
+            hint: ''
             /cluster.options:
               jcr:primaryType: frontend:pluginconfig
