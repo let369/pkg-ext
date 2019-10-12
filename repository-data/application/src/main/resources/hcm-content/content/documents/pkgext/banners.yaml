@@ -7,20 +7,21 @@
   hippotranslation:locale: en
   /banner1:
     jcr:primaryType: hippo:handle
-    jcr:mixinTypes: ['mix:referenceable']
+    jcr:mixinTypes: ['hippo:versionInfo', 'mix:referenceable']
     jcr:uuid: 895fb1b6-410d-4972-9894-6b6a06d2b361
-    /banner1:
+    hippo:versionHistory: 9fe2bb2c-d9f6-4b13-8a90-927aa4fd86f1
+    /banner1[1]:
       jcr:primaryType: pkgext:bannerdocument
       jcr:mixinTypes: ['mix:referenceable']
       jcr:uuid: fe8afd13-f07b-4f3f-bfd7-602064809fc4
-      hippo:availability: [live, preview]
+      hippo:availability: [live]
       hippostd:holder: admin
       hippostd:state: published
       hippostdpubwf:createdBy: admin
       hippostdpubwf:creationDate: 2014-03-20T17:00:00+01:00
-      hippostdpubwf:lastModificationDate: 2014-03-20T17:04:00+01:00
+      hippostdpubwf:lastModificationDate: 2019-10-12T15:48:23.484+02:00
       hippostdpubwf:lastModifiedBy: admin
-      hippostdpubwf:publicationDate: 2014-03-20T17:04:00+01:00
+      hippostdpubwf:publicationDate: 2019-10-12T15:48:25.729+02:00
       hippotranslation:id: 06a3cee5-58be-4e83-8a86-f4a0d0f50e04
       hippotranslation:locale: en
       pkgext:title: Sample banner
@@ -39,6 +40,80 @@
       /pkgext:link:
         jcr:primaryType: hippo:mirror
         hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+      /pkgext:giphyimagepicker:
+        jcr:primaryType: giphy:giphyimagepicker
+        giphy:gifs: '[{"id":"2DRSlLXPBiKvC","title":"ballet dancing GIF","image":"https://media1.giphy.com/media/2DRSlLXPBiKvC/giphy.gif?cid=042fc15672b8494ff117fea59d2346a14bce926a7da00cb6&rid=giphy.gif","description":"","data":{"type":"gif","id":"2DRSlLXPBiKvC","slug":"2DRSlLXPBiKvC","url":"https://giphy.com/gifs/2DRSlLXPBiKvC","bitly_gif_url":"https://gph.is/25iHHaU","bitly_url":"https://gph.is/25iHHaU","embed_url":"https://giphy.com/embed/2DRSlLXPBiKvC","username":"","source":"https://www.reddit.com/r/gifs/comments/4bhisp/who_loves_to_dance/","content_url":"","source_tld":"www.reddit.com","source_post_url":"https://www.reddit.com/r/gifs/comments/4bhisp/who_loves_to_dance/","is_sticker":0,"import_datetime":"2016-03-22
+          14:10:46","trending_datetime":"2016-03-23 09:00:01","images":{"original":{"url":"https://media1.giphy.com/media/2DRSlLXPBiKvC/giphy.gif?cid=042fc15672b8494ff117fea59d2346a14bce926a7da00cb6&rid=giphy.gif","width":"426","height":"240","size":"1127393","mp4":"https://media1.giphy.com/media/2DRSlLXPBiKvC/giphy.mp4?cid=042fc15672b8494ff117fea59d2346a14bce926a7da00cb6&rid=giphy.mp4","mp4_size":"596933","webp":"https://media1.giphy.com/media/2DRSlLXPBiKvC/giphy.webp?cid=042fc15672b8494ff117fea59d2346a14bce926a7da00cb6&rid=giphy.webp","webp_size":"525020","frames":"33","hash":"4110afc58a8bf443b07d11d4294a4306"}},"title":"ballet
+          dancing GIF","user":null}}]'
+        giphy:images: ['https://media1.giphy.com/media/2DRSlLXPBiKvC/giphy.gif?cid=042fc15672b8494ff117fea59d2346a14bce926a7da00cb6&rid=giphy.gif']
+    /banner1[2]:
+      jcr:primaryType: pkgext:bannerdocument
+      jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+      jcr:uuid: 89876f3f-79f9-4811-a37d-da922038120a
+      hippo:availability: [preview]
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2014-03-20T17:00:00+01:00
+      hippostdpubwf:lastModificationDate: 2019-10-12T15:48:23.484+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 06a3cee5-58be-4e83-8a86-f4a0d0f50e04
+      hippotranslation:locale: en
+      pkgext:title: Sample banner
+      /pkgext:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat.</p>
+      /pkgext:image:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: 9e440e6d-e93a-4d5f-913b-9c3b0867c812
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+      /pkgext:link:
+        jcr:primaryType: hippo:mirror
+        hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+      /pkgext:giphyimagepicker:
+        jcr:primaryType: giphy:giphyimagepicker
+        giphy:gifs: '[{"id":"2DRSlLXPBiKvC","title":"ballet dancing GIF","image":"https://media1.giphy.com/media/2DRSlLXPBiKvC/giphy.gif?cid=042fc15672b8494ff117fea59d2346a14bce926a7da00cb6&rid=giphy.gif","description":"","data":{"type":"gif","id":"2DRSlLXPBiKvC","slug":"2DRSlLXPBiKvC","url":"https://giphy.com/gifs/2DRSlLXPBiKvC","bitly_gif_url":"https://gph.is/25iHHaU","bitly_url":"https://gph.is/25iHHaU","embed_url":"https://giphy.com/embed/2DRSlLXPBiKvC","username":"","source":"https://www.reddit.com/r/gifs/comments/4bhisp/who_loves_to_dance/","content_url":"","source_tld":"www.reddit.com","source_post_url":"https://www.reddit.com/r/gifs/comments/4bhisp/who_loves_to_dance/","is_sticker":0,"import_datetime":"2016-03-22
+          14:10:46","trending_datetime":"2016-03-23 09:00:01","images":{"original":{"url":"https://media1.giphy.com/media/2DRSlLXPBiKvC/giphy.gif?cid=042fc15672b8494ff117fea59d2346a14bce926a7da00cb6&rid=giphy.gif","width":"426","height":"240","size":"1127393","mp4":"https://media1.giphy.com/media/2DRSlLXPBiKvC/giphy.mp4?cid=042fc15672b8494ff117fea59d2346a14bce926a7da00cb6&rid=giphy.mp4","mp4_size":"596933","webp":"https://media1.giphy.com/media/2DRSlLXPBiKvC/giphy.webp?cid=042fc15672b8494ff117fea59d2346a14bce926a7da00cb6&rid=giphy.webp","webp_size":"525020","frames":"33","hash":"4110afc58a8bf443b07d11d4294a4306"}},"title":"ballet
+          dancing GIF","user":null}}]'
+        giphy:images: ['https://media1.giphy.com/media/2DRSlLXPBiKvC/giphy.gif?cid=042fc15672b8494ff117fea59d2346a14bce926a7da00cb6&rid=giphy.gif']
+    /banner1[3]:
+      jcr:primaryType: pkgext:bannerdocument
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 91bc3632-38ff-404d-bd87-39ecae2a9ecd
+      hippo:availability: []
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2014-03-20T17:00:00+01:00
+      hippostdpubwf:lastModificationDate: 2019-10-12T15:48:14.719+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 06a3cee5-58be-4e83-8a86-f4a0d0f50e04
+      hippotranslation:locale: en
+      pkgext:title: Sample banner
+      /pkgext:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat.</p>
+      /pkgext:image:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: 9e440e6d-e93a-4d5f-913b-9c3b0867c812
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+      /pkgext:link:
+        jcr:primaryType: hippo:mirror
+        hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+      /pkgext:giphyimagepicker:
+        jcr:primaryType: giphy:giphyimagepicker
+        giphy:gifs: '[{"id":"2DRSlLXPBiKvC","title":"ballet dancing GIF","image":"https://media1.giphy.com/media/2DRSlLXPBiKvC/giphy.gif?cid=042fc15672b8494ff117fea59d2346a14bce926a7da00cb6&rid=giphy.gif","description":"","data":{"type":"gif","id":"2DRSlLXPBiKvC","slug":"2DRSlLXPBiKvC","url":"https://giphy.com/gifs/2DRSlLXPBiKvC","bitly_gif_url":"https://gph.is/25iHHaU","bitly_url":"https://gph.is/25iHHaU","embed_url":"https://giphy.com/embed/2DRSlLXPBiKvC","username":"","source":"https://www.reddit.com/r/gifs/comments/4bhisp/who_loves_to_dance/","content_url":"","source_tld":"www.reddit.com","source_post_url":"https://www.reddit.com/r/gifs/comments/4bhisp/who_loves_to_dance/","is_sticker":0,"import_datetime":"2016-03-22
+          14:10:46","trending_datetime":"2016-03-23 09:00:01","images":{"original":{"url":"https://media1.giphy.com/media/2DRSlLXPBiKvC/giphy.gif?cid=042fc15672b8494ff117fea59d2346a14bce926a7da00cb6&rid=giphy.gif","width":"426","height":"240","size":"1127393","mp4":"https://media1.giphy.com/media/2DRSlLXPBiKvC/giphy.mp4?cid=042fc15672b8494ff117fea59d2346a14bce926a7da00cb6&rid=giphy.mp4","mp4_size":"596933","webp":"https://media1.giphy.com/media/2DRSlLXPBiKvC/giphy.webp?cid=042fc15672b8494ff117fea59d2346a14bce926a7da00cb6&rid=giphy.webp","webp_size":"525020","frames":"33","hash":"4110afc58a8bf443b07d11d4294a4306"}},"title":"ballet
+          dancing GIF","user":null}}]'
+        giphy:images: ['https://media1.giphy.com/media/2DRSlLXPBiKvC/giphy.gif?cid=042fc15672b8494ff117fea59d2346a14bce926a7da00cb6&rid=giphy.gif']
   /banner2:
     jcr:primaryType: hippo:handle
     jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
