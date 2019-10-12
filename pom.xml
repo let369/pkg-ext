@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.onehippo.cms7</groupId>
     <artifactId>hippo-cms7-release</artifactId>
-    <version>13.3.0</version>
+    <version>13.4.0</version>
   </parent>
 
   <name>pkg-ext</name>
@@ -59,7 +59,7 @@
   <!-- End of emptied/overridden metadata from parent hippo-cms7-release pom. -->
 
   <properties>
-    <edp.version>0.3.1</edp.version>
+    <edp.version>0.4.0</edp.version>
     <!--***START temporary override of versions*** -->
     <!-- ***END temporary override of versions*** -->
 

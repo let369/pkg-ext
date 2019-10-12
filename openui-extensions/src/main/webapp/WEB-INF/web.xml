@@ -11,7 +11,7 @@
     <init-param>
       <!--Comma separated list of extensions utilised in the project-->
       <param-name>extensions</param-name>
-      <param-value>ga</param-value>
+      <param-value>ga,externalPicker</param-value>
     </init-param>
   </filter>
 

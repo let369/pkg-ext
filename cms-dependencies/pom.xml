@@ -12,16 +12,16 @@
   <description>pkg-ext CMS Dependencies</description>
   <dependencies>
     <!--OpenUI extensions-->
-      <!--<dependency>-->
-        <!--<groupId>com.bloomreach.openui</groupId>-->
-        <!--<artifactId>openui-external-document-picker-api</artifactId>-->
-        <!--<version>${edp.version}</version>-->
-      <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>com.bloomreach.openui</groupId>-->
-        <!--<artifactId>openui-external-document-picker-giphy-cms</artifactId>-->
-        <!--<version>${edp.version}</version>-->
-      <!--</dependency>-->
+      <dependency>
+        <groupId>com.bloomreach.openui</groupId>
+        <artifactId>openui-external-document-picker-api</artifactId>
+        <version>${edp.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.bloomreach.openui</groupId>
+        <artifactId>openui-external-document-picker-giphy-cms</artifactId>
+        <version>${edp.version}</version>
+      </dependency>
     <!--OpenUI extensions-->
     <dependency>
       <groupId>org.example</groupId>

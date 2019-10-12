@@ -13,11 +13,11 @@
 
   <dependencies>
     <!--OpenUI extensions-->
-    <!--<dependency>-->
-      <!--<groupId>com.bloomreach.openui</groupId>-->
-      <!--<artifactId>openui-external-document-picker-giphy-site</artifactId>-->
-      <!--<version>${edp.version}</version>-->
-    <!--</dependency>-->
+      <dependency>
+        <groupId>com.bloomreach.openui</groupId>
+        <artifactId>openui-external-document-picker-giphy-site</artifactId>
+        <version>${edp.version}</version>
+      </dependency>
     <!--OpenUI extensions-->
     <dependency>
       <groupId>javax.servlet.jsp</groupId>

@@ -1,0 +1,11 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:frontend/cms/ui-extensions/ga:
+      jcr:primaryType: frontend:uiExtension
+      jcr:mixinTypes: ['hippostd:relaxed']
+      frontend:config: '{"VIEW_ID":"your-view-id", "CLIENT_ID":"your-client-id"}'
+      frontend:displayName: Google Analytics
+      frontend:extensionPoint: channel.page.tools
+      frontend:url: http://localhost:8080/openui/ga/
+    /hippo:configuration/hippo:frontend/cms/ui-extensions/giphy:
+      frontend:url: http://localhost:8080/openui/externalPicker/
